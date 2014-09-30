@@ -31,6 +31,9 @@ public class ServletHoroscopo extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
-        out.println("No salgas, estás expuesto a que te muerda la vibora cabezona, que por cierto es muy venenosa");
+        
+        Pitonisa pito=new Pitonisa(new Zodiaco());
+     
+        out.println(pito.obtenerFuturo(request.getParameter("signo")));  
     }
 }

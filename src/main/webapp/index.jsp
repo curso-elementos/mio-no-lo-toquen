@@ -45,6 +45,9 @@
             $(document).ready(function(){
              $("#boton").click(function(){
                 $.ajax({
+                    data:{
+                        'signo':$("#signo").val()
+                    },
                     method:'get',
                     url:'horoscopo',
                     success:function(res){
