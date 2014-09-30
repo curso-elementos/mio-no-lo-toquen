@@ -18,7 +18,7 @@
     </head>
     <body>
         <div id="zodiaco">
-            <h1>Horoscopos</h1>
+            <h1>Horóscopos</h1>
             <h3>Selecciona tu signo zodiacal</h3>
             <select name="signo" id="signo">
                 <option>Virgo</option>
@@ -36,6 +36,23 @@
             </select>
             <br>
             <input id="boton" type="submit" class="btn" value="Ver horóscopo">
-        </div>
+            <div id="resultado">
+                
+            </div>
+           </div>
+        <script>
+            $(document).ready(function(){
+             $("#boton").click(function(){
+                $.ajax({
+                    method:'get',
+                    url:'horoscopo',
+                    success:function(res){
+                         $("#resultado").html(res);  
+                    }
+                });
+              
+             });
+            });
+        </script>
     </body>
 </html>

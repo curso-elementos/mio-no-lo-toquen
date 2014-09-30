@@ -21,18 +21,24 @@ h3{
   background-image: url('papel-viejo.png');
      color:#372A12;
 }
-p{
-    font-size: 20px;
+#resultado{
+    font-size: 24px;
+    padding: 10px;
      color:#372A12;
+     line-height: 100%;
+     text-align: justify;
 }
 #boton{
      background-image: url('papel-viejo.png');
      border-color: white;
-    color:#372A12;
+     color:#372A12;
      margin-top: 15px;
      font-size: 24px;
      border-radius: 5px;
-     box-shadow: 1px 1px 2px;
+     box-shadow: 1px 1px 2px 1px #372A12;;
+}
+#boton:hover{
+    box-shadow: 0 1px 0 0 #372A12;;
 }
 #zodiaco{
     font-family: 'yo';
@@ -40,11 +46,13 @@ p{
     position:  absolute;
     margin:0 auto;
     left:30%;
- bottom: 100px;
+    bottom: 100px;
     height: 340px;
     border-radius: 7px;
     background-image:url('papel-viejo2.jpg');
     background-size: cover;
     color:white;
+     box-shadow: 1px 1px 2px 1px  #372A12; ;
+     
     text-align: center;
 }
