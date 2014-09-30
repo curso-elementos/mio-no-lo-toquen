@@ -1,0 +1,50 @@
+@font-face{
+    font-family: 'yo';
+    src:url(antigua.ttf);
+}
+
+body{
+            background-image: url('fondoIncreible.jpg');
+         background-size: cover;
+         background-repeat: no-repeat;
+}
+h1{
+    font-size: 44px;
+    color:#372A12;
+}
+h3{
+    font-size: 30px;
+     color:#372A12;
+}
+#signo{
+    font-size: 30px;
+  background-image: url('papel-viejo.png');
+     color:#372A12;
+}
+p{
+    font-size: 20px;
+     color:#372A12;
+}
+#boton{
+     background-image: url('papel-viejo.png');
+     border-color: white;
+    color:#372A12;
+     margin-top: 15px;
+     font-size: 24px;
+     border-radius: 5px;
+     box-shadow: 1px 1px 2px;
+}
+#zodiaco{
+    font-family: 'yo';
+    width:580px;
+    position:  absolute;
+    margin:0 auto;
+    left:30%;
+ bottom: 100px;
+    height: 340px;
+    border-radius: 7px;
+    background-image:url('papel-viejo2.jpg');
+    background-size: cover;
+    color:white;
+    text-align: center;
+}
